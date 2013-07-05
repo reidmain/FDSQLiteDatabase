@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2796919B17865EA400E83588 /* libFDSQLiteDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2796919817865E7C00E83588 /* libFDSQLiteDatabase.a */; };
 		27A86A8F177E6BC500C56658 /* FDDatabaseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A86A8E177E6BC500C56658 /* FDDatabaseListController.m */; };
 		27A86A91177E6BE500C56658 /* FDDatabaseListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A86A90177E6BE500C56658 /* FDDatabaseListView.xib */; };
 		27A86A94177E6D4300C56658 /* Chinook.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27A86A93177E6D4300C56658 /* Chinook.sqlite */; };
 		27A86A9E1780AA8800C56658 /* FDDatabaseTableListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A86A9D1780AA8800C56658 /* FDDatabaseTableListController.m */; };
 		27A86AA01780AA9600C56658 /* FDDatabaseTableListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A86A9F1780AA9600C56658 /* FDDatabaseTableListView.xib */; };
-		27A86AA51780AD3500C56658 /* libFDSQLiteDatabase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A86A88177E684A00C56658 /* libFDSQLiteDatabase.a */; };
 		27A86AA71780AD4400C56658 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A86AA61780AD4400C56658 /* libsqlite3.dylib */; };
 		27EF8E92177E650D00C780D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EF8E91177E650D00C780D8 /* Foundation.framework */; };
 		27EF8E94177E650D00C780D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EF8E93177E650D00C780D8 /* CoreGraphics.framework */; };
@@ -41,16 +41,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		27A86A87177E684A00C56658 /* PBXContainerItemProxy */ = {
+		2796919717865E7C00E83588 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27A86A83177E684A00C56658 /* FDSQLiteDatabase Static Library.xcodeproj */;
+			containerPortal = 2796919317865E7C00E83588 /* FDSQLiteDatabase Static Library.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 27A86A70177E67A400C56658;
 			remoteInfo = FDSQLiteDatabase;
 		};
-		27A86A8B177E6A1200C56658 /* PBXContainerItemProxy */ = {
+		2796919917865EA000E83588 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 27A86A83177E684A00C56658 /* FDSQLiteDatabase Static Library.xcodeproj */;
+			containerPortal = 2796919317865E7C00E83588 /* FDSQLiteDatabase Static Library.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 27A86A6F177E67A400C56658;
 			remoteInfo = FDSQLiteDatabase;
@@ -58,7 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27A86A83177E684A00C56658 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "../../../Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
+		2796919317865E7C00E83588 /* FDSQLiteDatabase Static Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "FDSQLiteDatabase Static Library.xcodeproj"; path = "../../Static Library Project/FDSQLiteDatabase Static Library.xcodeproj"; sourceTree = "<group>"; };
 		27A86A8D177E6BC500C56658 /* FDDatabaseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDatabaseListController.h; sourceTree = "<group>"; };
 		27A86A8E177E6BC500C56658 /* FDDatabaseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDatabaseListController.m; sourceTree = "<group>"; };
 		27A86A90177E6BE500C56658 /* FDDatabaseListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDDatabaseListView.xib; sourceTree = "<group>"; };
@@ -108,17 +108,17 @@
 				27EF8E96177E650D00C780D8 /* QuartzCore.framework in Frameworks */,
 				27EF8E98177E650D00C780D8 /* UIKit.framework in Frameworks */,
 				27A86AA71780AD4400C56658 /* libsqlite3.dylib in Frameworks */,
-				27A86AA51780AD3500C56658 /* libFDSQLiteDatabase.a in Frameworks */,
+				2796919B17865EA400E83588 /* libFDSQLiteDatabase.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27A86A84177E684A00C56658 /* Products */ = {
+		2796919417865E7C00E83588 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27A86A88177E684A00C56658 /* libFDSQLiteDatabase.a */,
+				2796919817865E7C00E83588 /* libFDSQLiteDatabase.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,10 +187,10 @@
 		27EF8EA0177E650D00C780D8 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				27A86A83177E684A00C56658 /* FDSQLiteDatabase Static Library.xcodeproj */,
+				2796919317865E7C00E83588 /* FDSQLiteDatabase Static Library.xcodeproj */,
 			);
 			name = Vendors;
-			path = "FDSQLiteDatabase iOS Example/Vendors";
+			path = "FDSQLiteDatabase iOS Example";
 			sourceTree = "<group>";
 		};
 		27EF8EA1177E650D00C780D8 /* Shared */ = {
@@ -495,7 +495,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				27A86A8C177E6A1200C56658 /* PBXTargetDependency */,
+				2796919A17865EA000E83588 /* PBXTargetDependency */,
 			);
 			name = "FDSQLiteDatabase iOS Example";
 			productName = "FDSQLiteDatabase iOS Example";
@@ -523,8 +523,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 27A86A84177E684A00C56658 /* Products */;
-					ProjectRef = 27A86A83177E684A00C56658 /* FDSQLiteDatabase Static Library.xcodeproj */;
+					ProductGroup = 2796919417865E7C00E83588 /* Products */;
+					ProjectRef = 2796919317865E7C00E83588 /* FDSQLiteDatabase Static Library.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -535,11 +535,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		27A86A88177E684A00C56658 /* libFDSQLiteDatabase.a */ = {
+		2796919817865E7C00E83588 /* libFDSQLiteDatabase.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libFDSQLiteDatabase.a;
-			remoteRef = 27A86A87177E684A00C56658 /* PBXContainerItemProxy */;
+			remoteRef = 2796919717865E7C00E83588 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -590,10 +590,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		27A86A8C177E6A1200C56658 /* PBXTargetDependency */ = {
+		2796919A17865EA000E83588 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FDSQLiteDatabase;
-			targetProxy = 27A86A8B177E6A1200C56658 /* PBXContainerItemProxy */;
+			targetProxy = 2796919917865EA000E83588 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
