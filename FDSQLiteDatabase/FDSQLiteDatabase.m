@@ -101,7 +101,8 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 
 #pragma mark - Public Methods
 
-- (FDStatementResult *)executeStatement: (NSString *)statement, ...
+- (FDStatementResult *)executeStatementWithTransformBlock: (FDSQLiteDatabaseTransformBlock)transformBlock 
+	statement: (NSString *)statement, ...;
 {
 	FDStatementResult *statementResult = [[FDStatementResult alloc] 
 		init];
@@ -263,7 +264,20 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 				}
 			}
 			
-			[rows addObject: row];
+			// If the transform block exists use it to transform the row into a local entity.
+			if (transformBlock != nil)
+			{
+				id transformedRow = transformBlock(row);
+				
+				if (transformedRow != nil)
+				{
+					[rows addObject: transformedRow];
+				}
+			}
+			else
+			{
+				[rows addObject: row];
+			}
 			
 			// Iterate to the next row.
 			resultCode = sqlite3_step(preparedStatement);
@@ -301,6 +315,14 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 	
 	// Release the list of variable arguments.
 	va_end(argumentList);
+	
+	return statementResult;
+}
+
+- (FDStatementResult *)executeStatement: (NSString *)statement, ...
+{
+	FDStatementResult *statementResult = [self executeStatementWithTransformBlock: nil 
+		statement: statement];
 	
 	return statementResult;
 }

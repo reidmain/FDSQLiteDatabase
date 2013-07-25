@@ -6,6 +6,11 @@
 extern NSString * const FDSQLiteDatabaseErrorDomain;
 
 
+#pragma mark Type Definitions
+
+typedef id (^FDSQLiteDatabaseTransformBlock)(NSDictionary *row);
+
+
 #pragma mark - Enumerations
 
 
@@ -27,6 +32,8 @@ extern NSString * const FDSQLiteDatabaseErrorDomain;
 
 #pragma mark - Instance Methods
 
+- (FDStatementResult *)executeStatementWithTransformBlock: (FDSQLiteDatabaseTransformBlock)transformBlock 
+	statement: (NSString *)statement, ...;
 - (FDStatementResult *)executeStatement: (NSString *)statement, ...;
 
 
