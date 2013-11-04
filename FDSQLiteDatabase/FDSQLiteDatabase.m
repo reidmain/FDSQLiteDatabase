@@ -13,6 +13,9 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 
 @interface FDSQLiteDatabase ()
 
+- (FDStatementResult *)_executeStatementWithTransformBlock: (FDSQLiteDatabaseTransformBlock)transformBlock 
+	statement: (NSString *)statement 
+	argumentList: (va_list)argumentList;
 - (NSError *)_lastError;
 
 @end
@@ -102,7 +105,47 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 #pragma mark - Public Methods
 
 - (FDStatementResult *)executeStatementWithTransformBlock: (FDSQLiteDatabaseTransformBlock)transformBlock 
-	statement: (NSString *)statement, ...;
+	statement: (NSString *)statement, ...
+{
+	// Get a pointer to the list of variable arguments passed into the method.
+	va_list argumentList = nil;
+	va_start(argumentList, statement);
+	
+	FDStatementResult *statementResult = [self _executeStatementWithTransformBlock: transformBlock 
+		statement: statement 
+		argumentList: argumentList];
+	
+	// Release the list of variable arguments.
+	va_end(argumentList);
+	
+	return statementResult;
+}
+
+- (FDStatementResult *)executeStatement: (NSString *)statement, ...
+{
+	// Get a pointer to the list of variable arguments passed into the method.
+	va_list argumentList = nil;
+	va_start(argumentList, statement);
+	
+	FDStatementResult *statementResult = [self _executeStatementWithTransformBlock: nil 
+		statement: statement 
+		argumentList: argumentList];
+	
+	// Release the list of variable arguments.
+	va_end(argumentList);
+	
+	return statementResult;
+}
+
+
+#pragma mark - Overridden Methods
+
+
+#pragma mark - Private Methods
+
+- (FDStatementResult *)_executeStatementWithTransformBlock: (FDSQLiteDatabaseTransformBlock)transformBlock 
+	statement: (NSString *)statement 
+	argumentList: (va_list)argumentList
 {
 	FDStatementResult *statementResult = [[FDStatementResult alloc] 
 		init];
@@ -126,10 +169,6 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 	
 	// Determine how many bound parameters are in the statement.
 	int numberOfParameters = sqlite3_bind_parameter_count(preparedStatement);
-	
-	// Get a pointer to the list of variable arguments passed into the method.
-	va_list argumentList = nil;
-	va_start(argumentList, statement);
 	
 	// Iterate through all the variable arguments and bind them to the paramters in the statement.
 	unsigned int argumentIndex = 1;
@@ -313,25 +352,8 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 	// Destroy the prepared statement because it is no longer needed.
 	sqlite3_finalize(preparedStatement);
 	
-	// Release the list of variable arguments.
-	va_end(argumentList);
-	
 	return statementResult;
 }
-
-- (FDStatementResult *)executeStatement: (NSString *)statement, ...
-{
-	FDStatementResult *statementResult = [self executeStatementWithTransformBlock: nil 
-		statement: statement];
-	
-	return statementResult;
-}
-
-
-#pragma mark - Overridden Methods
-
-
-#pragma mark - Private Methods
 
 - (NSError *)_lastError
 {
