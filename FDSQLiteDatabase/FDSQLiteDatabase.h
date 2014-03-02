@@ -1,4 +1,5 @@
 #import "FDStatementResult.h"
+#import <FDFoundationKit/FDFoundationKit.h>
 
 
 #pragma mark Constants

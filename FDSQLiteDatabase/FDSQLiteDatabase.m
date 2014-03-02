@@ -1,7 +1,6 @@
 #import "FDSQLiteDatabase.h"
 #import "sqlite3.h"
 #import "FDStatementResult+Private.h"
-#import "NSArray+Accessing.h"
 
 
 #pragma mark Constants
