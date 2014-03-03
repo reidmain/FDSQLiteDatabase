@@ -107,7 +107,7 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 	statement: (NSString *)statement, ...
 {
 	// Get a pointer to the list of variable arguments passed into the method.
-	va_list argumentList = nil;
+	va_list argumentList;
 	va_start(argumentList, statement);
 	
 	FDStatementResult *statementResult = [self _executeStatementWithTransformBlock: transformBlock 
@@ -123,7 +123,7 @@ NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 - (FDStatementResult *)executeStatement: (NSString *)statement, ...
 {
 	// Get a pointer to the list of variable arguments passed into the method.
-	va_list argumentList = nil;
+	va_list argumentList;
 	va_start(argumentList, statement);
 	
 	FDStatementResult *statementResult = [self _executeStatementWithTransformBlock: nil 
