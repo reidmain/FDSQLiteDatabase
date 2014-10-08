@@ -5,9 +5,4 @@
 	UITableViewDelegate>
 
 
-#pragma mark - Constructors
-
-- (id)initWithDefaultNibName;
-
-
 @end

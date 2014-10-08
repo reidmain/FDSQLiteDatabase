@@ -24,8 +24,7 @@
 	_mainWindow.backgroundColor = [UIColor blackColor];
 	
 	// Create database list controller, wrap it in a navigation controller and add it to the main window.
-	FDDatabaseListController *databaseListController = [[FDDatabaseListController alloc] 
-		initWithDefaultNibName];
+	FDDatabaseListController *databaseListController = [FDDatabaseListController new];
 	
 	UINavigationController *navigationController = [[UINavigationController alloc] 
 		initWithRootViewController: databaseListController];

@@ -11,8 +11,6 @@ static NSString * const CellIdentifier = @"CellIdentifier";
 
 @interface FDDatabaseListController ()
 
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
-
 - (void)_initializeDatabaseListController;
 
 
@@ -24,6 +22,8 @@ static NSString * const CellIdentifier = @"CellIdentifier";
 @implementation FDDatabaseListController
 {
 	@private __strong NSMutableArray *_databaseNames;
+	
+	@private __strong UITableView *_tableView;
 }
 
 
@@ -32,7 +32,7 @@ static NSString * const CellIdentifier = @"CellIdentifier";
 - (id)initWithDefaultNibName
 {
 	// Abort if base initializer fails.
-	if ((self = [self initWithNibName: @"FDDatabaseListView" 
+	if ((self = [self initWithNibName: nil 
 		bundle: nil]) == nil)
 	{
 		return nil;
@@ -90,6 +90,18 @@ static NSString * const CellIdentifier = @"CellIdentifier";
 - (NSUInteger)supportedInterfaceOrientations
 {
 	return UIInterfaceOrientationMaskAll;
+}
+
+- (void)loadView
+{
+	_tableView = [[UITableView alloc] 
+		initWithFrame: CGRectZero 
+			style: UITableViewStylePlain];
+	
+	_tableView.dataSource = self;
+	_tableView.delegate = self;
+	
+	self.view = _tableView;
 }
 
 - (void)viewDidLoad

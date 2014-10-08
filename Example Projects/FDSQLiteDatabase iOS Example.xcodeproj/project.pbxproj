@@ -7,18 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		274E267018C3DD940000D804 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274E266F18C3DD940000D804 /* Images.xcassets */; };
-		274E267318C3DDD80000D804 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 274E267118C3DDD80000D804 /* iTunesArtwork */; };
-		274E267418C3DDD80000D804 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 274E267218C3DDD80000D804 /* iTunesArtwork@2x */; };
-		27A86A8F177E6BC500C56658 /* FDDatabaseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A86A8E177E6BC500C56658 /* FDDatabaseListController.m */; };
-		27A86A91177E6BE500C56658 /* FDDatabaseListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A86A90177E6BE500C56658 /* FDDatabaseListView.xib */; };
-		27A86A94177E6D4300C56658 /* Chinook.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27A86A93177E6D4300C56658 /* Chinook.sqlite */; };
-		27A86A9E1780AA8800C56658 /* FDDatabaseTableListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A86A9D1780AA8800C56658 /* FDDatabaseTableListController.m */; };
-		27A86AA01780AA9600C56658 /* FDDatabaseTableListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A86A9F1780AA9600C56658 /* FDDatabaseTableListView.xib */; };
+		27599A2419E4F1AD009B6C56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27599A1719E4F1AD009B6C56 /* AppDelegate.m */; };
+		27599A2519E4F1AD009B6C56 /* FDDatabaseListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27599A1A19E4F1AD009B6C56 /* FDDatabaseListController.m */; };
+		27599A2619E4F1AD009B6C56 /* FDDatabaseTableListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27599A1C19E4F1AD009B6C56 /* FDDatabaseTableListController.m */; };
+		27599A2719E4F1AD009B6C56 /* Chinook.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 27599A1F19E4F1AD009B6C56 /* Chinook.sqlite */; };
+		27599A2819E4F1AD009B6C56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27599A2019E4F1AD009B6C56 /* Images.xcassets */; };
+		27599A2919E4F1AD009B6C56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27599A2119E4F1AD009B6C56 /* InfoPlist.strings */; };
+		27599A2A19E4F1AD009B6C56 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 27599A2219E4F1AD009B6C56 /* iTunesArtwork */; };
+		27599A2B19E4F1AD009B6C56 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 27599A2319E4F1AD009B6C56 /* iTunesArtwork@2x */; };
 		27A86AA71780AD4400C56658 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A86AA61780AD4400C56658 /* libsqlite3.dylib */; };
 		27EF8E9E177E650D00C780D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EF8E9D177E650D00C780D8 /* main.m */; };
-		27EF8EA4177E650D00C780D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EF8EA3177E650D00C780D8 /* AppDelegate.m */; };
-		27EF8EA7177E650D00C780D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27EF8EA6177E650D00C780D8 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		274E266F18C3DD940000D804 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		274E267118C3DDD80000D804 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
-		274E267218C3DDD80000D804 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
-		27A86A8D177E6BC500C56658 /* FDDatabaseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDatabaseListController.h; sourceTree = "<group>"; };
-		27A86A8E177E6BC500C56658 /* FDDatabaseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDatabaseListController.m; sourceTree = "<group>"; };
-		27A86A90177E6BE500C56658 /* FDDatabaseListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDDatabaseListView.xib; sourceTree = "<group>"; };
-		27A86A93177E6D4300C56658 /* Chinook.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinook.sqlite; sourceTree = "<group>"; };
-		27A86A9C1780AA8800C56658 /* FDDatabaseTableListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDatabaseTableListController.h; sourceTree = "<group>"; };
-		27A86A9D1780AA8800C56658 /* FDDatabaseTableListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDatabaseTableListController.m; sourceTree = "<group>"; };
-		27A86A9F1780AA9600C56658 /* FDDatabaseTableListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FDDatabaseTableListView.xib; sourceTree = "<group>"; };
+		27599A1619E4F1AD009B6C56 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27599A1719E4F1AD009B6C56 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27599A1919E4F1AD009B6C56 /* FDDatabaseListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDatabaseListController.h; sourceTree = "<group>"; };
+		27599A1A19E4F1AD009B6C56 /* FDDatabaseListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDatabaseListController.m; sourceTree = "<group>"; };
+		27599A1B19E4F1AD009B6C56 /* FDDatabaseTableListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDatabaseTableListController.h; sourceTree = "<group>"; };
+		27599A1C19E4F1AD009B6C56 /* FDDatabaseTableListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDatabaseTableListController.m; sourceTree = "<group>"; };
+		27599A1F19E4F1AD009B6C56 /* Chinook.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinook.sqlite; sourceTree = "<group>"; };
+		27599A2019E4F1AD009B6C56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27599A2119E4F1AD009B6C56 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		27599A2219E4F1AD009B6C56 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		27599A2319E4F1AD009B6C56 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		27A86AA61780AD4400C56658 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		27C06CD519E4E98D0019D731 /* FDSQLiteDatabase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FDSQLiteDatabase.xcodeproj; path = "../../Framework Project/FDSQLiteDatabase.xcodeproj"; sourceTree = "<group>"; };
 		27EF8E8E177E650D00C780D8 /* FDSQLiteDatabase iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FDSQLiteDatabase iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,9 +55,6 @@
 		27EF8E9C177E650D00C780D8 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		27EF8E9D177E650D00C780D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27EF8E9F177E650D00C780D8 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
-		27EF8EA2177E650D00C780D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		27EF8EA3177E650D00C780D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27EF8EA6177E650D00C780D8 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +77,43 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		27A86A92177E6D4300C56658 /* Databases */ = {
+		27599A1519E4F1AD009B6C56 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				27A86A93177E6D4300C56658 /* Chinook.sqlite */,
+				27599A1819E4F1AD009B6C56 /* Controllers */,
+				27599A1619E4F1AD009B6C56 /* AppDelegate.h */,
+				27599A1719E4F1AD009B6C56 /* AppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		27599A1819E4F1AD009B6C56 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				27599A1919E4F1AD009B6C56 /* FDDatabaseListController.h */,
+				27599A1A19E4F1AD009B6C56 /* FDDatabaseListController.m */,
+				27599A1B19E4F1AD009B6C56 /* FDDatabaseTableListController.h */,
+				27599A1C19E4F1AD009B6C56 /* FDDatabaseTableListController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		27599A1D19E4F1AD009B6C56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27599A1E19E4F1AD009B6C56 /* Databases */,
+				27599A2019E4F1AD009B6C56 /* Images.xcassets */,
+				27599A2119E4F1AD009B6C56 /* InfoPlist.strings */,
+				27599A2219E4F1AD009B6C56 /* iTunesArtwork */,
+				27599A2319E4F1AD009B6C56 /* iTunesArtwork@2x */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27599A1E19E4F1AD009B6C56 /* Databases */ = {
+			isa = PBXGroup;
+			children = (
+				27599A1F19E4F1AD009B6C56 /* Chinook.sqlite */,
 			);
 			path = Databases;
 			sourceTree = "<group>";
@@ -119,9 +148,8 @@
 		27EF8E99177E650D00C780D8 /* FDSQLiteDatabase iOS Example */ = {
 			isa = PBXGroup;
 			children = (
-				27EF8ED4177E650D00C780D8 /* iPad */,
-				27EF8EBC177E650D00C780D8 /* iPhone */,
-				27EF8EA1177E650D00C780D8 /* Shared */,
+				27599A1519E4F1AD009B6C56 /* Classes */,
+				27599A1D19E4F1AD009B6C56 /* Resources */,
 				27EF8E9A177E650D00C780D8 /* Supporting Files */,
 			);
 			path = "FDSQLiteDatabase iOS Example";
@@ -145,232 +173,6 @@
 			);
 			name = Vendors;
 			path = "FDSQLiteDatabase iOS Example";
-			sourceTree = "<group>";
-		};
-		27EF8EA1177E650D00C780D8 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EB1177E650D00C780D8 /* Classes */,
-				27EF8EAE177E650D00C780D8 /* Views */,
-				27EF8EA5177E650D00C780D8 /* Resources */,
-				27EF8EA2177E650D00C780D8 /* AppDelegate.h */,
-				27EF8EA3177E650D00C780D8 /* AppDelegate.m */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		27EF8EA5177E650D00C780D8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				274E266F18C3DD940000D804 /* Images.xcassets */,
-				27A86A92177E6D4300C56658 /* Databases */,
-				27EF8EA6177E650D00C780D8 /* InfoPlist.strings */,
-				274E267118C3DDD80000D804 /* iTunesArtwork */,
-				274E267218C3DDD80000D804 /* iTunesArtwork@2x */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		27EF8EAE177E650D00C780D8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EB0177E650D00C780D8 /* Controllers */,
-				27EF8EAF177E650D00C780D8 /* Controls */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		27EF8EAF177E650D00C780D8 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controls;
-			sourceTree = "<group>";
-		};
-		27EF8EB0177E650D00C780D8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				27A86A90177E6BE500C56658 /* FDDatabaseListView.xib */,
-				27A86A9F1780AA9600C56658 /* FDDatabaseTableListView.xib */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		27EF8EB1177E650D00C780D8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EBB177E650D00C780D8 /* Common */,
-				27EF8EBA177E650D00C780D8 /* Controllers */,
-				27EF8EB5177E650D00C780D8 /* Controls */,
-				27EF8EB4177E650D00C780D8 /* Categories */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		27EF8EB4177E650D00C780D8 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		27EF8EB5177E650D00C780D8 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EB6177E650D00C780D8 /* Common */,
-			);
-			path = Controls;
-			sourceTree = "<group>";
-		};
-		27EF8EB6177E650D00C780D8 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		27EF8EBA177E650D00C780D8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				27A86A8D177E6BC500C56658 /* FDDatabaseListController.h */,
-				27A86A8E177E6BC500C56658 /* FDDatabaseListController.m */,
-				27A86A9C1780AA8800C56658 /* FDDatabaseTableListController.h */,
-				27A86A9D1780AA8800C56658 /* FDDatabaseTableListController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		27EF8EBB177E650D00C780D8 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		27EF8EBC177E650D00C780D8 /* iPhone */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8ED1177E650D00C780D8 /* Classes */,
-				27EF8ECE177E650D00C780D8 /* Views */,
-				27EF8EBD177E650D00C780D8 /* Resources */,
-			);
-			path = iPhone;
-			sourceTree = "<group>";
-		};
-		27EF8EBD177E650D00C780D8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		27EF8ECE177E650D00C780D8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8ECF177E650D00C780D8 /* Controllers */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		27EF8ECF177E650D00C780D8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8ED0177E650D00C780D8 /* Common */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		27EF8ED0177E650D00C780D8 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		27EF8ED1177E650D00C780D8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8ED2177E650D00C780D8 /* Controllers */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		27EF8ED2177E650D00C780D8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8ED3177E650D00C780D8 /* Common */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		27EF8ED3177E650D00C780D8 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		27EF8ED4177E650D00C780D8 /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EEB177E650D00C780D8 /* Classes */,
-				27EF8EE8177E650D00C780D8 /* Views */,
-				27EF8ED5177E650D00C780D8 /* Resources */,
-			);
-			path = iPad;
-			sourceTree = "<group>";
-		};
-		27EF8ED5177E650D00C780D8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		27EF8EE8177E650D00C780D8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EE9177E650D00C780D8 /* Controllers */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		27EF8EE9177E650D00C780D8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EEA177E650D00C780D8 /* Common */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		27EF8EEA177E650D00C780D8 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		27EF8EEB177E650D00C780D8 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EEC177E650D00C780D8 /* Controllers */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		27EF8EEC177E650D00C780D8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				27EF8EED177E650D00C780D8 /* Common */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		27EF8EED177E650D00C780D8 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,13 +243,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27EF8EA7177E650D00C780D8 /* InfoPlist.strings in Resources */,
-				274E267418C3DDD80000D804 /* iTunesArtwork@2x in Resources */,
-				274E267018C3DD940000D804 /* Images.xcassets in Resources */,
-				274E267318C3DDD80000D804 /* iTunesArtwork in Resources */,
-				27A86A91177E6BE500C56658 /* FDDatabaseListView.xib in Resources */,
-				27A86A94177E6D4300C56658 /* Chinook.sqlite in Resources */,
-				27A86AA01780AA9600C56658 /* FDDatabaseTableListView.xib in Resources */,
+				27599A2B19E4F1AD009B6C56 /* iTunesArtwork@2x in Resources */,
+				27599A2719E4F1AD009B6C56 /* Chinook.sqlite in Resources */,
+				27599A2919E4F1AD009B6C56 /* InfoPlist.strings in Resources */,
+				27599A2819E4F1AD009B6C56 /* Images.xcassets in Resources */,
+				27599A2A19E4F1AD009B6C56 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,10 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27599A2519E4F1AD009B6C56 /* FDDatabaseListController.m in Sources */,
+				27599A2619E4F1AD009B6C56 /* FDDatabaseTableListController.m in Sources */,
+				27599A2419E4F1AD009B6C56 /* AppDelegate.m in Sources */,
 				27EF8E9E177E650D00C780D8 /* main.m in Sources */,
-				27EF8EA4177E650D00C780D8 /* AppDelegate.m in Sources */,
-				27A86A8F177E6BC500C56658 /* FDDatabaseListController.m in Sources */,
-				27A86A9E1780AA8800C56658 /* FDDatabaseTableListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,7 +345,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
@@ -584,7 +384,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "\"$(BUILD_DIR)/Release$(EFFECTIVE_PLATFORM_NAME)\"/**";
