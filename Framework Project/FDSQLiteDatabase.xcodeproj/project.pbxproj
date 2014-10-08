@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27A86A74177E67A400C56658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A86A73177E67A400C56658 /* Foundation.framework */; };
 		27A86A8A177E69FC00C56658 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A86A89177E69FC00C56658 /* libsqlite3.dylib */; };
 		27A86A98177E75EF00C56658 /* FDSQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A86A97177E75EF00C56658 /* FDSQLiteDatabase.m */; };
 		27A86AA11780AB8500C56658 /* FDSQLiteDatabase.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27A86A96177E75EF00C56658 /* FDSQLiteDatabase.h */; };
@@ -49,8 +48,6 @@
 
 /* Begin PBXFileReference section */
 		27A86A70177E67A400C56658 /* libFDSQLiteDatabase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFDSQLiteDatabase.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		27A86A73177E67A400C56658 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		27A86A77177E67A400C56658 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		27A86A89177E69FC00C56658 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		27A86A96177E75EF00C56658 /* FDSQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSQLiteDatabase.h; sourceTree = "<group>"; };
 		27A86A97177E75EF00C56658 /* FDSQLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSQLiteDatabase.m; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A86A74177E67A400C56658 /* Foundation.framework in Frameworks */,
 				27ECA09218C3D56500DA859E /* libFDFoundationKit.a in Frameworks */,
 				27A86A8A177E69FC00C56658 /* libsqlite3.dylib in Frameworks */,
 			);
@@ -80,13 +76,13 @@
 				27ECA08A18C3D55B00DA859E /* FDFoundationKit Static Library.xcodeproj */,
 			);
 			name = Vendors;
-			path = ../../Vendors;
+			path = ../Vendors;
 			sourceTree = "<group>";
 		};
 		27A86A67177E67A400C56658 = {
 			isa = PBXGroup;
 			children = (
-				27A86A75177E67A400C56658 /* FDSQLiteDatabase Static Library */,
+				27A86A75177E67A400C56658 /* FDSQLiteDatabase Framework */,
 				27A86A72177E67A400C56658 /* Frameworks */,
 				27A86A71177E67A400C56658 /* Products */,
 			);
@@ -104,28 +100,18 @@
 		27A86A72177E67A400C56658 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27A86A73177E67A400C56658 /* Foundation.framework */,
 				27A86A89177E69FC00C56658 /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		27A86A75177E67A400C56658 /* FDSQLiteDatabase Static Library */ = {
+		27A86A75177E67A400C56658 /* FDSQLiteDatabase Framework */ = {
 			isa = PBXGroup;
 			children = (
 				27A86A81177E67E200C56658 /* FDSQLiteDatabase */,
 				271EDB4B18C3D5300084DA66 /* Vendors */,
-				27A86A76177E67A400C56658 /* Supporting Files */,
 			);
-			path = "FDSQLiteDatabase Static Library";
-			sourceTree = "<group>";
-		};
-		27A86A76177E67A400C56658 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				27A86A77177E67A400C56658 /* Prefix.pch */,
-			);
-			path = "Supporting Files";
+			name = "FDSQLiteDatabase Framework";
 			sourceTree = "<group>";
 		};
 		27A86A81177E67E200C56658 /* FDSQLiteDatabase */ = {
@@ -138,7 +124,7 @@
 				27A86AAC1781204300C56658 /* FDStatementResult+Private.h */,
 			);
 			name = FDSQLiteDatabase;
-			path = ../../FDSQLiteDatabase;
+			path = ../FDSQLiteDatabase;
 			sourceTree = "<group>";
 		};
 		27ECA08B18C3D55B00DA859E /* Products */ = {
@@ -179,7 +165,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "1414 Degrees";
 			};
-			buildConfigurationList = 27A86A6B177E67A400C56658 /* Build configuration list for PBXProject "FDSQLiteDatabase Static Library" */;
+			buildConfigurationList = 27A86A6B177E67A400C56658 /* Build configuration list for PBXProject "FDSQLiteDatabase" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -327,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27A86A6B177E67A400C56658 /* Build configuration list for PBXProject "FDSQLiteDatabase Static Library" */ = {
+		27A86A6B177E67A400C56658 /* Build configuration list for PBXProject "FDSQLiteDatabase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27A86A7C177E67A400C56658 /* Debug */,
