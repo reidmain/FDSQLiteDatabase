@@ -294,7 +294,7 @@
 		275999EE19E4EB94009B6C56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +387,7 @@
 				275999EE19E4EB94009B6C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27A86A6B177E67A400C56658 /* Build configuration list for PBXProject "FDSQLiteDatabase" */ = {
 			isa = XCConfigurationList;
