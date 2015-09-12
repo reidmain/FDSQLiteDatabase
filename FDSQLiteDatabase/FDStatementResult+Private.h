@@ -1,7 +1,7 @@
 #import "FDStatementResult.h"
 
 
-#pragma mark Class Interface
+#pragma mark - Class Interface
 
 @interface FDStatementResult ()
 

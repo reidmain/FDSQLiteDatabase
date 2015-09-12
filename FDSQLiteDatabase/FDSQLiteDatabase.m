@@ -1,9 +1,11 @@
 #import "FDSQLiteDatabase.h"
+
 #import "sqlite3.h"
+
 #import "FDStatementResult+Private.h"
 
 
-#pragma mark Constants
+#pragma mark - Constants
 
 NSString * const FDSQLiteDatabaseErrorDomain = @"FDSQLiteDatabaseErrorDomain";
 

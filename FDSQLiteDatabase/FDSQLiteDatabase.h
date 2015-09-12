@@ -1,8 +1,11 @@
-#import <FDFoundationKit/FDFoundationKit.h>
+@import Foundation;
+
+@import FDFoundationKit;
+
 #import "FDStatementResult.h"
 
 
-#pragma mark Constants
+#pragma mark - Constants
 
 extern NSString * const FDSQLiteDatabaseErrorDomain;
 
