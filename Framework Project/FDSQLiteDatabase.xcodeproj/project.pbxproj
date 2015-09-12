@@ -188,8 +188,7 @@
 				27EE96521BA4DF4900670640 /* Classes */,
 				27EE96541BA4DF4900670640 /* Supporting Files */,
 			);
-			name = "FDSQLiteDatabase Tests";
-			path = "FDSQLiteDatabase iOS Tests";
+			path = "FDSQLiteDatabase Tests";
 			sourceTree = "<group>";
 		};
 		27EE96521BA4DF4900670640 /* Classes */ = {
@@ -500,7 +499,7 @@
 		27EE96501BA4DF1C00670640 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "FDSQLiteDatabase iOS Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "FDSQLiteDatabase Tests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1414degrees.sqlitedatabase.ios.tests;
@@ -512,7 +511,7 @@
 		27EE96511BA4DF1C00670640 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = "FDSQLiteDatabase iOS Tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "FDSQLiteDatabase Tests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1414degrees.sqlitedatabase.ios.tests;
@@ -549,6 +548,7 @@
 				27EE96511BA4DF1C00670640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
