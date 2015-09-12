@@ -13,6 +13,7 @@
 		27599A0E19E4EE3A009B6C56 /* FDSQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A86A97177E75EF00C56658 /* FDSQLiteDatabase.m */; };
 		27599A0F19E4EEA9009B6C56 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A86A89177E69FC00C56658 /* libsqlite3.dylib */; };
 		27EE95D71BA4DD0800670640 /* FDStatementResult+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A86AAC1781204300C56658 /* FDStatementResult+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		27EE96561BA4DF4900670640 /* FDSQLiteDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EE96531BA4DF4900670640 /* FDSQLiteDatabaseTests.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,13 @@
 			remoteGlobalIDString = 27994A8B1BA2A5C700B40846;
 			remoteInfo = "FDFoundationKit watchOS";
 		};
+		27EE964D1BA4DF1C00670640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27A86A68177E67A400C56658 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 275999DB19E4EB93009B6C56;
+			remoteInfo = "FDSQLiteDatabase iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +78,9 @@
 		27A86AA917811DAB00C56658 /* FDStatementResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDStatementResult.h; sourceTree = "<group>"; };
 		27A86AAA17811DAB00C56658 /* FDStatementResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDStatementResult.m; sourceTree = "<group>"; };
 		27A86AAC1781204300C56658 /* FDStatementResult+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FDStatementResult+Private.h"; sourceTree = "<group>"; };
+		27EE96471BA4DF1C00670640 /* FDSQLiteDatabase iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FDSQLiteDatabase iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27EE96531BA4DF4900670640 /* FDSQLiteDatabaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSQLiteDatabaseTests.m; sourceTree = "<group>"; };
+		27EE96551BA4DF4900670640 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +89,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				27599A0F19E4EEA9009B6C56 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27EE96441BA4DF1C00670640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				27A86A75177E67A400C56658 /* FDSQLiteDatabase Framework */,
+				27EE96481BA4DF1C00670640 /* FDSQLiteDatabase Tests */,
 				271EDB4B18C3D5300084DA66 /* Vendors */,
 				27A86A72177E67A400C56658 /* Frameworks */,
 				27A86A71177E67A400C56658 /* Products */,
@@ -128,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				275999DC19E4EB93009B6C56 /* FDSQLiteDatabase.framework */,
+				27EE96471BA4DF1C00670640 /* FDSQLiteDatabase iOS Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +180,32 @@
 			);
 			name = FDSQLiteDatabase;
 			path = ../FDSQLiteDatabase;
+			sourceTree = "<group>";
+		};
+		27EE96481BA4DF1C00670640 /* FDSQLiteDatabase Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27EE96521BA4DF4900670640 /* Classes */,
+				27EE96541BA4DF4900670640 /* Supporting Files */,
+			);
+			name = "FDSQLiteDatabase Tests";
+			path = "FDSQLiteDatabase iOS Tests";
+			sourceTree = "<group>";
+		};
+		27EE96521BA4DF4900670640 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				27EE96531BA4DF4900670640 /* FDSQLiteDatabaseTests.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		27EE96541BA4DF4900670640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27EE96551BA4DF4900670640 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +243,24 @@
 			productReference = 275999DC19E4EB93009B6C56 /* FDSQLiteDatabase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		27EE96461BA4DF1C00670640 /* FDSQLiteDatabase iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27EE964F1BA4DF1C00670640 /* Build configuration list for PBXNativeTarget "FDSQLiteDatabase iOS Tests" */;
+			buildPhases = (
+				27EE96431BA4DF1C00670640 /* Sources */,
+				27EE96441BA4DF1C00670640 /* Frameworks */,
+				27EE96451BA4DF1C00670640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27EE964E1BA4DF1C00670640 /* PBXTargetDependency */,
+			);
+			name = "FDSQLiteDatabase iOS Tests";
+			productName = "FDSQLiteDatabase iOS Tests";
+			productReference = 27EE96471BA4DF1C00670640 /* FDSQLiteDatabase iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,6 +272,9 @@
 				TargetAttributes = {
 					275999DB19E4EB93009B6C56 = {
 						CreatedOnToolsVersion = 6.0.1;
+					};
+					27EE96461BA4DF1C00670640 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
@@ -230,6 +297,7 @@
 			projectRoot = "";
 			targets = (
 				275999DB19E4EB93009B6C56 /* FDSQLiteDatabase iOS */,
+				27EE96461BA4DF1C00670640 /* FDSQLiteDatabase iOS Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,6 +348,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27EE96451BA4DF1C00670640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,6 +367,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27EE96431BA4DF1C00670640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27EE96561BA4DF4900670640 /* FDSQLiteDatabaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +382,11 @@
 			isa = PBXTargetDependency;
 			name = "FDFoundationKit iOS";
 			targetProxy = 27599A0019E4ED1D009B6C56 /* PBXContainerItemProxy */;
+		};
+		27EE964E1BA4DF1C00670640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 275999DB19E4EB93009B6C56 /* FDSQLiteDatabase iOS */;
+			targetProxy = 27EE964D1BA4DF1C00670640 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -409,6 +497,30 @@
 			};
 			name = Release;
 		};
+		27EE96501BA4DF1C00670640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FDSQLiteDatabase iOS Tests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1414degrees.sqlitedatabase.ios.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27EE96511BA4DF1C00670640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FDSQLiteDatabase iOS Tests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.1414degrees.sqlitedatabase.ios.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -429,6 +541,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		27EE964F1BA4DF1C00670640 /* Build configuration list for PBXNativeTarget "FDSQLiteDatabase iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27EE96501BA4DF1C00670640 /* Debug */,
+				27EE96511BA4DF1C00670640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

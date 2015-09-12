@@ -26,9 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "27EE96461BA4DF1C00670640"
+               BuildableName = "FDSQLiteDatabase iOS Tests.xctest"
+               BlueprintName = "FDSQLiteDatabase iOS Tests"
+               ReferencedContainer = "container:FDSQLiteDatabase.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "275999DB19E4EB93009B6C56"
+            BuildableName = "FDSQLiteDatabase.framework"
+            BlueprintName = "FDSQLiteDatabase iOS"
+            ReferencedContainer = "container:FDSQLiteDatabase.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
